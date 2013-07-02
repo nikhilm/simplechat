@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>SimpleChat</title>
+    <meta name="description" content="SimplePush demo">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/static/css/app.css">
+  </head>
+  <body>
+    <ul id="chat" class="unstyled">
+        <li class="muted">Loading...</li>
+    </ul>
+
+    <form id="theform" class="form-inline">
+        <input type="hidden" name="nick" value="setme" />
+        <input type="text" name="message" class="input-small span4" placeholder="Type here" />
+        <button type="submit" class="btn">Send</button>
+    </form>
+
+    <div id="nickPrompt" class="modal hide" role="dialog">
+        <div class="modal-body">
+            <input id="nick-input" placeholder="Choose a nickname" />
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" id="set-nick">Start chatting!</button>
+        </div>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        var notification = navigator.mozNotification.createNotification("SimpleChat", "Trigger permission doorhanger");
+    </script>
+    
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script language="javascript" type="text/javascript" src="//code.jquery.com/jquery-1.10.1.min.js"> </script>
+    <script language="javascript" type="text/javascript" src="/static/js/bootstrap.min.js"> </script>
+    <script language="javascript" type="text/javascript" src="/static/js/model.js"> </script>
+    <script language="javascript" type="text/javascript" src="/static/js/app.js"> </script>
+  </body>
+</html>

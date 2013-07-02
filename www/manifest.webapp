@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "name": "SimpleChat",
+  "description": "Your new awesome SimplePush demo",
+  "launch_path": "/",
+  "icons": {
+    "16": "/img/icons/mortar-16.png",
+    "48": "/img/icons/mortar-48.png",
+    "128": "/img/icons/mortar-128.png"
+  },
+  "developer": {
+    "name": "Nikhil Marathe",
+    "url": "http://blog.nikhilism.com"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en",
+  "permissions": {
+    "push": {},
+    "desktop-notification": {}
+  },
+  "messages": [
+    { "push": "/" },
+    { "push-register": "/" }
+  ]
+}

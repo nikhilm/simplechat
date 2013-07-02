@@ -1,0 +1,7 @@
+
+/* Tip: Use "@import" to add styles instead of adding <link>'s in your
+   HTML, and volo will inline it when building for production */
+
+/* Your styles here */
+@import "bootstrap.min.css";
+@import "bootstrap-responsive.min.css";

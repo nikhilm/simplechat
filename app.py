@@ -63,7 +63,7 @@ def endpoint():
     redis.rpush(k('endpoints'), endpoint)
     # Ping this endpoint immediately so that the new client downloads existing messages.
     # Since this is a new endpoint, we can send the version as 0.
-    requests.put(endpoint, data={'version': 0})
+    requests.put(endpoint, data={'version': 1})
     return 'OK'
 
 if __name__ == '__main__':

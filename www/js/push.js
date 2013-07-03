@@ -4,7 +4,7 @@ model.init().then(function() {
   navigator.mozSetMessageHandler('push', function(message) {
     model.latest().then(function(latest) {
       if (latest >= message.version) {
-        dump("Not downloading since " + message.version + " is same as " + latest);
+        console.log("Not downloading since " + message.version + " is same as " + latest);
       }
 
       $.getJSON('/message/'+latest, function(data) {
@@ -18,7 +18,7 @@ model.init().then(function() {
           });
           updateChat();
         }, function(e) {
-            dump("Error adding " + e.target.error.name + " \n");
+            console.log("Error adding " + e.target.error.name);
         });
       });
     });

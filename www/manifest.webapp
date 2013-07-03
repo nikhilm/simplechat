@@ -3,11 +3,6 @@
   "name": "SimpleChat",
   "description": "Your new awesome SimplePush demo",
   "launch_path": "/",
-  "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
-  },
   "developer": {
     "name": "Nikhil Marathe",
     "url": "http://blog.nikhilism.com"
